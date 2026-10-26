@@ -478,6 +478,12 @@ html[dir="rtl"] .casestudies-sec h2{font-weight:900}
 .cs-stats strong{font-family:'Archivo Black',sans-serif;color:var(--text);font-size:1rem;white-space:nowrap}
 .cs-stats span{color:var(--muted)}
 .cs-note{color:rgba(168,157,133,.65);font-size:.78rem;border-top:1px dashed rgba(233,193,92,.18);padding-top:10px;margin-top:4px}
+.cs-download{
+  display:inline-flex;align-items:center;gap:6px;margin-top:6px;
+  color:var(--acid);font-weight:700;font-size:.85rem;text-decoration:none;
+  border-bottom:1px solid transparent;transition:border-color .25s;align-self:flex-start;
+}
+.cs-download:hover{border-color:var(--acid)}
 
 /* ===== STRATEGY & REPORTS ===== */
 .reports-sec{padding:60px 5vw 110px;text-align:center;background:var(--bg2)}
