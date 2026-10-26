@@ -443,6 +443,12 @@ html[dir="rtl"] .results-sec h2{font-weight:900}
 .rc-dots{display:flex;justify-content:center;gap:9px;margin-top:22px}
 .rc-dot{width:8px;height:8px;border-radius:50%;background:rgba(255,255,255,.2);transition:background .3s}
 .rc-dot.active{background:var(--acid)}
+.results-more{
+  display:inline-flex;align-items:center;gap:8px;margin-top:34px;
+  color:var(--acid);font-weight:700;font-size:.92rem;letter-spacing:.3px;
+  text-decoration:none;border-bottom:1px solid transparent;transition:border-color .25s;
+}
+.results-more:hover{border-color:var(--acid)}
 
 /* ===== STRATEGY & REPORTS ===== */
 .reports-sec{padding:60px 5vw 110px;text-align:center;background:var(--bg2)}
