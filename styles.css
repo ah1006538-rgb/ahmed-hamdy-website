@@ -477,6 +477,23 @@ html[dir="rtl"] .casestudies-sec h2{font-weight:900}
 .cs-stats li{display:flex;align-items:baseline;gap:8px;font-size:.9rem}
 .cs-stats strong{font-family:'Archivo Black',sans-serif;color:var(--text);font-size:1rem;white-space:nowrap}
 .cs-stats span{color:var(--muted)}
+.gallery-grid{
+  display:grid;grid-template-columns:repeat(4,1fr);grid-auto-rows:120px;gap:16px;
+  max-width:1180px;margin:0 auto 50px;
+}
+.gallery-tall{grid-row:span 4;grid-column:span 1}
+.gallery-wide{grid-row:span 2;grid-column:span 3}
+@media(max-width:860px){
+  .gallery-grid{grid-template-columns:1fr;grid-auto-rows:auto}
+  .gallery-tall,.gallery-wide{grid-row:auto;grid-column:auto}
+}
+.gallery-item{margin:0;border-radius:16px;overflow:hidden;border:1px solid rgba(233,193,92,.16);background:var(--card);display:flex;flex-direction:column;height:100%}
+.gallery-item img{width:100%;height:100%;object-fit:cover;display:block;flex:1}
+.gallery-item figcaption{padding:10px 14px;font-size:.8rem;color:var(--muted);border-top:1px solid rgba(233,193,92,.14)}
+.quote-block{max-width:780px;margin:0 auto;text-align:center;padding:30px 5vw 0}
+.quote-block p{font-size:1.05rem;line-height:1.7;color:var(--text);font-style:italic}
+.quote-block .quote-ar{font-style:normal;color:var(--muted);direction:rtl;font-family:'Cairo',sans-serif}
+.quote-block .quote-tag{color:var(--acid);font-size:.78rem;letter-spacing:1px;text-transform:uppercase;margin-top:10px}
 .cs-gallery{display:flex;gap:8px;margin:2px 0 2px}
 .cs-gallery a{flex:1;display:block;aspect-ratio:16/10;border-radius:8px;overflow:hidden;border:1px solid rgba(233,193,92,.14)}
 .cs-gallery img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .35s,opacity .2s}
