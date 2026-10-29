@@ -527,6 +527,7 @@ html[dir="rtl"] .services-lux h2{font-weight:900}
   border-bottom:1px solid rgba(233,193,92,.18);transition:background .2s,padding .2s;
   flex-wrap:wrap;
 }
+a.svc{color:inherit;text-decoration:none;cursor:pointer}
 .svc:hover{background:rgba(233,193,92,.05);padding-inline-start:22px}
 .svc .num{
   font-family:'Archivo Black',sans-serif;font-size:1rem;color:var(--acid);min-width:46px;
