@@ -572,6 +572,35 @@ html[dir="rtl"] .certs h2{font-weight:900}
   border-color:rgba(233,193,92,.5);
 }
 
+/* sostac flow diagram */
+.sostac-flow{
+  max-width:1200px;margin:8px auto 44px;padding:0 20px;
+  display:flex;align-items:flex-start;justify-content:space-between;gap:6px;position:relative;
+}
+.sostac-flow::before{
+  content:'';position:absolute;top:46px;left:7%;right:7%;height:0;
+  border-top:1.5px dashed var(--muted);opacity:.5;z-index:0;
+}
+.sostac-node{display:flex;flex-direction:column;align-items:center;gap:10px;position:relative;z-index:1;flex:1}
+.sostac-circle{
+  width:92px;height:92px;border-radius:50%;background:var(--card);border:1.5px solid var(--acid);
+  display:flex;align-items:center;justify-content:center;
+  font-family:'Archivo Black',Arial,sans-serif;font-size:2rem;color:var(--acid);
+}
+.sostac-label{
+  font-family:'Space Grotesk',Arial,sans-serif;font-size:.68rem;font-weight:700;
+  letter-spacing:.08em;color:var(--muted);text-align:center;
+}
+@media(max-width:860px){
+  .sostac-flow{flex-wrap:wrap;row-gap:28px}
+  .sostac-flow::before{display:none}
+  .sostac-node{flex:0 0 calc(33.33% - 4px)}
+  .sostac-circle{width:76px;height:76px;font-size:1.6rem}
+}
+@media(max-width:420px){
+  .sostac-node{flex:0 0 calc(50% - 3px)}
+}
+
 /* reveal */
 .reveal{opacity:0;transform:translateY(34px);transition:opacity .8s,transform .8s}
 .reveal.visible{opacity:1;transform:none}
