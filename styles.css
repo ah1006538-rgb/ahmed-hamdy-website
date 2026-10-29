@@ -477,6 +477,10 @@ html[dir="rtl"] .casestudies-sec h2{font-weight:900}
 .cs-stats li{display:flex;align-items:baseline;gap:8px;font-size:.9rem}
 .cs-stats strong{font-family:'Archivo Black',sans-serif;color:var(--text);font-size:1rem;white-space:nowrap}
 .cs-stats span{color:var(--muted)}
+.cs-gallery{display:flex;gap:8px;margin:2px 0 2px}
+.cs-gallery a{flex:1;display:block;aspect-ratio:16/10;border-radius:8px;overflow:hidden;border:1px solid rgba(233,193,92,.14)}
+.cs-gallery img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .35s,opacity .2s}
+.cs-gallery a:hover img{transform:scale(1.06);opacity:.9}
 .cs-note{color:rgba(168,157,133,.65);font-size:.78rem;border-top:1px dashed rgba(233,193,92,.18);padding-top:10px;margin-top:4px}
 .cs-download{
   display:inline-flex;align-items:center;gap:6px;margin-top:6px;
